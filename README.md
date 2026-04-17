@@ -1,86 +1,56 @@
-# 📊 Data Analysis — Used Cars Dataset (EDA & Cleaning)
+# used-cars-data-cleaning
+Exploratory Data Analysis and Data Cleaning of used vehicles dataset using Python and Jupyter Notebook.
 
-## 📌 Overview
-This project focuses on **Exploratory Data Analysis (EDA), data cleaning, and feature preparation** of a dataset containing used vehicles listed for sale in the United States.
 
-The goal is to transform raw automotive data into a clean, structured dataset ready for machine learning tasks such as **price category prediction and further modeling**.
+# Used Cars Data Cleaning
 
----
+## Project Description
 
-## 🎯 Objectives
-- Data cleaning and preprocessing  
-- Handling missing values and incorrect data types  
-- Detecting and removing outliers  
-- Exploring relationships between key variables  
-- Feature preparation for machine learning models  
-- Analysis of factors influencing vehicle pricing  
+This project focuses on **Exploratory Data Analysis (EDA)** and **Data Cleaning** of a dataset containing used vehicles listed for sale in the United States.
 
----
+The goal of the project is to prepare the dataset for the machine learning stage, where a classification model will predict the **price category of a used vehicle** based on its characteristics.
 
-## 🗂 Dataset
-The dataset contains information about used cars, including:
+## Objectives
 
-- **price** — vehicle price  
-- **year** — year of manufacture  
-- **manufacturer** — brand  
-- **model** — car model  
-- **condition** — condition of the vehicle  
-- **cylinders** — number of cylinders  
-- **fuel** — fuel type  
-- **odometer** — mileage  
-- **transmission** — transmission type  
-- **drive** — drive type  
-- **size, type, paint_color** — categorical features  
-- **price_category** — low / medium / high price class  
+The main objectives of this practical work are:
 
----
+* Identify and handle **missing values**
+* Convert and correct **data types**
+* Detect and process **outliers**
+* Prepare the dataset for **feature engineering**
 
-## 🔍 Workflow
+## Dataset
 
-### 🧹 Data Cleaning
-- Handling missing values  
-- Fixing incorrect data types  
-- Removing duplicates and anomalies  
+The dataset contains information about used vehicles listed for sale in the United States.
+It includes various characteristics of vehicles such as technical specifications, condition, and other attributes that may influence the price.
 
-### 📉 Outlier Detection
-- Boxplots and IQR method  
-- Removal of extreme price and mileage values  
+## Project Tasks
 
-### 📊 Exploratory Data Analysis
-- Price distribution analysis  
-- Price vs vehicle age relationship  
-- Correlation analysis (Pearson)  
-- Manufacturer and transmission insights  
+During this analysis the following steps were performed:
 
-### ⚙️ Feature Analysis
-- Feature importance evaluation  
-- Removal of low-impact features  
-- Dataset preparation for modeling  
+1. Data inspection and initial exploration
+2. Handling missing values in selected variables
+3. Converting incorrect data types
+4. Detecting and processing anomalous values (outliers)
+5. Preparing the dataframe for feature engineering and modeling
 
----
+## Technologies Used
 
-## 📈 Key Insights
-- Newer cars tend to be significantly more expensive  
-- Outliers often represent luxury or rare vehicles  
-- Mileage and manufacturer strongly influence price  
-- Price categories clearly segment the market  
+* Python
+* Pandas
+* Jupyter Notebook
 
----
+## Project Structure
 
-## 🧠 Tech Stack
-- Python  
-- Pandas  
-- Matplotlib  
-- Jupyter Notebook  
-- Scikit-learn  
+```
+dc_vehicles/
+│
+├── data/                # dataset
+├── notebooks/           # Jupyter notebooks with analysis
+├── requirements.txt     # project dependencies
+└── README.md            # project description
+```
 
----
+## Result
 
-## 🚗 Result
-The dataset was successfully cleaned and prepared for machine learning.  
-EDA revealed clear patterns in pricing behavior and key factors affecting vehicle value.
-
----
-
-## 👩‍💻 Author
-**Lada Bahdanovich**
+The dataset was cleaned and prepared for the next stage of the project — **feature engineering and machine learning model development**.
