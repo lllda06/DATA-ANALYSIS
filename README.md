@@ -1,56 +1,93 @@
-# used-cars-data-cleaning
-Exploratory Data Analysis and Data Cleaning of used vehicles dataset using Python and Jupyter Notebook.
+# Used Cars EDA 🚗📊
 
+**Exploratory Data Analysis of Used Cars: Visualizing Prices, Outliers, and Key Features**
 
-# Used Cars Data Cleaning
+---
 
-## Project Description
+## 📌 Project Overview
 
-This project focuses on **Exploratory Data Analysis (EDA)** and **Data Cleaning** of a dataset containing used vehicles listed for sale in the United States.
+In this project, I explored a dataset of used cars listed for sale in the United States. The goal was to clean the data, detect anomalies, and visualize relationships between car characteristics and price categories.  
 
-The goal of the project is to prepare the dataset for the machine learning stage, where a classification model will predict the **price category of a used vehicle** based on its characteristics.
+This analysis helps to understand pricing patterns, highlight outliers, and identify key features that influence car prices.  
 
-## Objectives
+---
 
-The main objectives of this practical work are:
+## 🗂 Dataset
 
-* Identify and handle **missing values**
-* Convert and correct **data types**
-* Detect and process **outliers**
-* Prepare the dataset for **feature engineering**
+The dataset used in this project is stored in `data/vehicles_dataset_upd.csv` and contains the following columns:
 
-## Dataset
+- `id` – record identifier  
+- `price` – vehicle price  
+- `year` – year of manufacture  
+- `manufacturer` – car manufacturer  
+- `model` – car model  
+- `condition` – condition of the car  
+- `cylinders` – number of cylinders  
+- `fuel` – fuel type  
+- `odometer` – mileage in miles  
+- `transmission` – transmission type  
+- `drive` – drive type  
+- `size` – car size  
+- `type` – body type  
+- `paint_color` – color  
+- `price_category` – low, medium, or high price category  
+...and other relevant features.
 
-The dataset contains information about used vehicles listed for sale in the United States.
-It includes various characteristics of vehicles such as technical specifications, condition, and other attributes that may influence the price.
+---
 
-## Project Tasks
+## 🔍 Analysis Steps
 
-During this analysis the following steps were performed:
+1. **Data Cleaning and Outlier Detection**  
+   - Identified anomalous prices using histograms, boxplots, and IQR method.  
+   - Removed outliers to focus on the main data distribution.
 
-1. Data inspection and initial exploration
-2. Handling missing values in selected variables
-3. Converting incorrect data types
-4. Detecting and processing anomalous values (outliers)
-5. Preparing the dataframe for feature engineering and modeling
+2. **Price vs Year Analysis**  
+   - Explored the relationship between vehicle price and year of manufacture.  
+   - Visualized trends with scatter and line plots.  
+   - Calculated Pearson correlation coefficient to quantify linear relationship.
 
-## Technologies Used
+3. **Price Category Analysis**  
+   - Visualized distribution of prices for low, medium, and high categories.  
+   - Used scatter plots to examine price and year by category.
 
-* Python
-* Pandas
-* Jupyter Notebook
+4. **Categorical Feature Visualization**  
+   - Analyzed car manufacturers and transmission types.  
+   - Created bar charts and pie charts to visualize categorical distributions.
 
-## Project Structure
+---
 
-```
-dc_vehicles/
-│
-├── data/                # dataset
-├── notebooks/           # Jupyter notebooks with analysis
-├── requirements.txt     # project dependencies
-└── README.md            # project description
-```
+## 📊 Key Visualizations
 
-## Result
+- Histogram of vehicle prices  
+- Boxplot for price outliers  
+- Scatter and line plots: price vs year  
+- Price distributions by price category  
+- Bar chart of manufacturers  
+- Pie chart of transmission types  
 
-The dataset was cleaned and prepared for the next stage of the project — **feature engineering and machine learning model development**.
+---
+
+## 💻 Technologies & Tools
+
+- Python 3.x  
+- Pandas  
+- Matplotlib  
+- Jupyter Notebook  
+
+---
+
+## 🔗 Conclusion
+
+- There is a **strong positive correlation** between vehicle age and price: newer cars are generally more expensive.  
+- Outliers mostly represent special cases: premium manufacturers or very low mileage vehicles.  
+- Visualizations reveal patterns in price distribution, manufacturer contribution, and transmission type popularity.  
+
+This project demonstrates my ability to perform **data cleaning, exploratory analysis, and insightful visualizations** using Python.  
+
+---
+
+---
+
+## 📌 Author
+
+Lada Bahdanovich
